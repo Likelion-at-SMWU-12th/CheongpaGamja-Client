@@ -41,7 +41,7 @@ const Categories = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 23px 40px;
-  margin-bottom: 28px;
+  /* margin-bottom: 28px; */
 `;
 
 const Category = styled.div`
