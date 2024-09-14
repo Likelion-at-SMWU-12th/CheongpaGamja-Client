@@ -121,7 +121,7 @@ const TitleInput = styled.input`
   border: none;
   background: none;
   outline: none;
-
+  width: 520px;
   &::placeholder {
     color: rgba(73, 73, 73, 0.2);
   }
