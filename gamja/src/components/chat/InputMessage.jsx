@@ -79,6 +79,7 @@ const InputBox = styled.footer`
 `;
 
 const Input = styled.input`
+  font-family: Pretendard;
   width: 440px;
   height: 51px;
   border: none;

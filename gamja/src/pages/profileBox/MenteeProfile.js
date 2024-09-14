@@ -173,7 +173,7 @@ const Concern = styled.div`
 `;
 
 const HistoryBox = styled.div`
-  /* margin-right: 20px; */
+  margin-right: 20px;
 `;
 
 const History = styled.div`

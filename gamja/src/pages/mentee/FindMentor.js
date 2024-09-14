@@ -65,17 +65,11 @@ export default FindMentor;
 const Container = styled.div`
   background-color: #ededed;
   width: 600px;
-  max-height: 1230px;
   margin: 0 auto;
-  overflow-y: scroll;
-  &::-webkit-scrollbar {
-    display: none;
-  }
-`;
-
-const TopContainer = styled.div`
-  background: #f8f8f8;
-  box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.05);
+  overflow-y: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 `;
 
 const InfoBox = styled.div`
@@ -83,10 +77,8 @@ const InfoBox = styled.div`
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 24px;
-  overflow-y: scroll;
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  flex-grow: 1;
+  overflow-y: auto;
 `;
 
 const BottomBar = styled.div`
@@ -99,6 +91,11 @@ const BottomBar = styled.div`
   justify-content: center;
   align-items: center;
   display: flex;
+`;
+
+const TopContainer = styled.div`
+  background: #f8f8f8;
+  box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.05);
 `;
 
 const AutoMatch = styled.button`

@@ -161,6 +161,7 @@ const ReplyInputWrapper = styled.div`
 `;
 
 const ReplyInput = styled.input`
+  font-family: Pretendard;
   width: 400px;
   height: 38px;
   padding: 3px 10px 3px 20px;
