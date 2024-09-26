@@ -66,10 +66,10 @@ const Container = styled.div`
   background-color: #ededed;
   width: 600px;
   margin: 0 auto;
-  overflow-y: auto;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 const InfoBox = styled.div`
@@ -77,8 +77,10 @@ const InfoBox = styled.div`
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 24px;
-  flex-grow: 1;
-  overflow-y: auto;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 const BottomBar = styled.div`
