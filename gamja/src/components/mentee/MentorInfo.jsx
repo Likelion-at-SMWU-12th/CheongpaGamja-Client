@@ -110,6 +110,7 @@ const MentorInfo = ({ infoList }) => {
 export default MentorInfo;
 
 const InfoBox = styled.div`
+  margin-top: 28px;
   border-radius: 15px;
   background: #f8f8f8;
   display: flex;
