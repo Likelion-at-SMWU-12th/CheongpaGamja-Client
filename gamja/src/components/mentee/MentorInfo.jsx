@@ -117,7 +117,7 @@ const InfoBox = styled.div`
   padding: 18px 14px;
   flex-direction: column;
   gap: 8px;
-  flex-shrink: 0;
+  margin-top: 28px;
 `;
 
 const ProfileBox = styled.div`
