@@ -99,6 +99,7 @@ const BottomBar = styled.div`
 const TopContainer = styled.div`
   background: #f8f8f8;
   box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.05);
+  margin-bottom: 28px;
 `;
 
 const AutoMatch = styled.button`
