@@ -70,7 +70,6 @@ const InputMessage = ({ roomId, onMessageSent }) => {
 export default InputMessage;
 
 const InputBox = styled.footer`
-  /* position: relative; */
   display: inline-flex;
   padding: 27px 40px;
   align-items: center;

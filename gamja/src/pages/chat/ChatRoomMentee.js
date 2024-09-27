@@ -71,7 +71,12 @@ const ChatRoomMentee = () => {
           )
         )}
       </MessageContainer>
-      <InputMessage roomId={chatRoomData.id} onMessageSent={handleNewMessage} />
+      <InputContainer>
+        <InputMessage
+          roomId={chatRoomData.id}
+          onMessageSent={handleNewMessage}
+        />
+      </InputContainer>
     </Container>
   );
 };
@@ -80,12 +85,13 @@ export default ChatRoomMentee;
 
 const Container = styled.div`
   background-color: #ededed;
-  width: 100%;
-  max-width: 600px;
-  height: 100vh;
+  width: 600px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  overflow-y: scroll;
+  min-height: calc(150vh - 100px);
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 const TopContainer = styled.div`
@@ -122,6 +128,18 @@ const Icon = styled.img`
   width: 40px;
   height: 40px;
   cursor: pointer;
+`;
+
+const InputContainer = styled.div`
+  position: fixed;
+  bottom: 0;
+  width: 600px;
+  height: 107px;
+  background: #f8f8f8;
+  box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.05);
+  justify-content: center;
+  align-items: center;
+  display: flex;
 `;
 
 const MessageContainer = styled.div`
