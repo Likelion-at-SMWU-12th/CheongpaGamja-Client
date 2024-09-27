@@ -88,8 +88,7 @@ const Container = styled.div`
   width: 600px;
   margin: 0 auto;
   overflow-y: scroll;
-  min-height: 1230px;
-  max-height: 100vh;
+  min-height: calc(150vh + 100px);
   &::-webkit-scrollbar {
     display: none;
   }
