@@ -71,7 +71,7 @@ export default InputMessage;
 
 const InputBox = styled.footer`
   display: inline-flex;
-  padding: 27px 40px;
+  padding: 27px 35px;
   align-items: center;
   background: #f8f8f8;
   gap: 10px;
