@@ -86,7 +86,7 @@ export default ChatRoomMentee;
 const Container = styled.div`
   background-color: #ededed;
   width: 600px;
-  margin: 0 auto 60px auto;
+  margin: 0 auto;
   overflow-y: scroll;
   min-height: calc(150vh + 100px);
   &::-webkit-scrollbar {
@@ -151,4 +151,5 @@ const MessageContainer = styled.div`
   &::-webkit-scrollbar {
     display: none;
   }
+  margin: 150px 0 120px 0;
 `;
