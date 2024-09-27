@@ -107,6 +107,7 @@ const Right = styled.div`
 const Container = styled.div`
   flex: 0 0 auto;
   width: 152px;
+  height: 95px;
   border-radius: 15px;
   background: #f8f8f8;
   padding: 17px 12px;
