@@ -86,9 +86,9 @@ export default ChatRoomMentee;
 const Container = styled.div`
   background-color: #ededed;
   width: 600px;
-  margin: 0 auto;
+  margin: 0px auto 60px auto;
   overflow-y: scroll;
-  min-height: calc(150vh - 100px);
+  min-height: calc(150vh + 100px);
   &::-webkit-scrollbar {
     display: none;
   }
@@ -97,6 +97,8 @@ const Container = styled.div`
 const TopContainer = styled.div`
   background: #f8f8f8;
   box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  width: 600px;
 `;
 
 const FuncBar = styled.div`
@@ -145,6 +147,7 @@ const InputContainer = styled.div`
 const MessageContainer = styled.div`
   flex: 1;
   padding: 31px 40px 0px 29px;
+  margin: 150px 0;
   overflow-y: scroll;
   &::-webkit-scrollbar {
     display: none;
