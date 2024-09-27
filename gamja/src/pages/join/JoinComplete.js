@@ -94,7 +94,7 @@ const JoinComplete = () => {
             <p>
               지금 로그인하고
               <br />
-              애타게 김이지님을 찾고있는
+              애타게 {userInfo.name}님을 찾고있는
               <br />
               멘티를 도와주세요!
             </p>
