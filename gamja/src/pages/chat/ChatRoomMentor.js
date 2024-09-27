@@ -62,7 +62,12 @@ const ChatRoomMentor = () => {
           )
         )}
       </MessageContainer>
-      <InputMessage roomId={chatRoomData.id} onMessageSent={handleNewMessage} />
+      <InputContainer>
+        <InputMessage
+          roomId={chatRoomData.id}
+          onMessageSent={handleNewMessage}
+        />
+      </InputContainer>
     </Container>
   );
 };
@@ -71,17 +76,20 @@ export default ChatRoomMentor;
 
 const Container = styled.div`
   background-color: #ededed;
-  width: 100%;
-  max-width: 600px;
-  height: 100vh;
+  width: 600px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  overflow-y: scroll;
+  min-height: calc(150vh + 100px);
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 const TopContainer = styled.div`
   background: #f8f8f8;
   box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  width: 600px;
 `;
 
 const FuncBar = styled.div`
@@ -103,6 +111,17 @@ const RoomName = styled.div`
   line-height: 150%;
   letter-spacing: -0.55px;
 `;
+const InputContainer = styled.div`
+  position: fixed;
+  bottom: 0;
+  width: 600px;
+  height: 107px;
+  background: #f8f8f8;
+  box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.05);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+`;
 
 const MessageContainer = styled.div`
   flex: 1;
@@ -111,4 +130,5 @@ const MessageContainer = styled.div`
   &::-webkit-scrollbar {
     display: none;
   }
+  margin: 150px 0 120px 0;
 `;
