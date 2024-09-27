@@ -88,7 +88,8 @@ const Container = styled.div`
   width: 600px;
   margin: 0 auto;
   overflow-y: scroll;
-  min-height: calc(150vh + 100px);
+  min-height: 1230px;
+  max-height: 100vh;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -146,10 +147,9 @@ const InputContainer = styled.div`
 
 const MessageContainer = styled.div`
   flex: 1;
-  padding: 31px 40px 0px 29px;
+  padding: 180px 40px 150px 29px;
   overflow-y: scroll;
   &::-webkit-scrollbar {
     display: none;
   }
-  margin: 150px 0 120px 0;
 `;
